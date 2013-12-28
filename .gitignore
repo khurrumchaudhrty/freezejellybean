@@ -1,9 +1,14 @@
 *.class
+
 ThemeWorksBasic/bin
 ThemeWorksBasic/gen
-
 ThemeWorksBasic/bin/*.*
 ThemeWorksBasic/gen/*.*
+
+actionbarsherlock/bin
+actionbarsherlock/gen
+actionbarsherlock/bin/*.*
+actionbarsherlock/gen/*.*
 
 # Package Files #
 *.jar
