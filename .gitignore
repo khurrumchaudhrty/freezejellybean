@@ -10,6 +10,15 @@ actionbarsherlock/gen
 actionbarsherlock/bin/*.*
 actionbarsherlock/gen/*.*
 
+Uicomponents/bin
+Uicomponents/gen
+Uicomponents/bin/*.*
+Uicomponents/gen/*.*
+
+Uicomponents
+
+.metadata
+
 # Package Files #
 *.jar
 *.war
