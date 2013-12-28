@@ -15,7 +15,16 @@ Uicomponents/gen
 Uicomponents/bin/*.*
 Uicomponents/gen/*.*
 
-Uicomponents
+freezejellybean/bin
+freezejellybean/gen
+freezejellybean/bin/*.*
+freezejellybean/gen/*.*
+
+libraryDump/bin
+libraryDump/gen
+libraryDump/bin/*.*
+libraryDump/gen/*.*
+
 
 .metadata
 
