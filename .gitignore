@@ -1,6 +1,7 @@
 *.class
 
-ThemeWorksBasic/bin/
+ThemeWorksBasic/bin/*.*
+ThemeWorksBasic/gen/*.*
 
 # Package Files #
 *.jar
