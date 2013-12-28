@@ -1,12 +1,10 @@
 package com.khurrum.freezejellybean;
 
-import com.actionbarsherlock.app.SherlockActivity;
-
 import android.os.Bundle;
-import android.app.Activity;
 import com.actionbarsherlock.view.Menu;
+import com.khurrum.common.ApplicationActivity;
 
-public class SplashActivity extends SherlockActivity  {
+public class SplashActivity extends ApplicationActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
