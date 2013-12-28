@@ -1,4 +1,6 @@
 *.class
+ThemeWorksBasic/bin
+ThemeWorksBasic/gen
 
 ThemeWorksBasic/bin/*.*
 ThemeWorksBasic/gen/*.*
