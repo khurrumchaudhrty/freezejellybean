@@ -4,7 +4,7 @@ import com.actionbarsherlock.app.SherlockActivity;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
+import com.actionbarsherlock.view.Menu;
 
 public class SplashActivity extends SherlockActivity  {
 
@@ -12,13 +12,15 @@ public class SplashActivity extends SherlockActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);// make it with out title
+        
         
     }
 
-
-    public boolean onCreateOptionsMenu(com.actionbarsherlock.view.MenuItem menu) {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.splash, (Menu) menu);
+    	getSupportMenuInflater().inflate(R.menu.splash, menu);
         return true;
     }
     
