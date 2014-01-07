@@ -1,8 +1,10 @@
 package com.khurrum.freezejellybean;
 
 import android.os.Bundle;
+import android.widget.ListView;
+
 import com.khurrum.common.ApplicationActivity;
-import com.khurrum.freezejellybean.data.Parser;
+import com.khurrum.freezejellybean.data.JAdaptor;
 
 public class JsonListActivity extends ApplicationActivity{
 	
@@ -11,8 +13,11 @@ public class JsonListActivity extends ApplicationActivity{
 	        super.onCreate(savedInstanceState);
 	        setContentView(R.layout.jsonlist);
 	        getSupportActionBar().setDisplayShowTitleEnabled(false);
-	        Parser parser = new Parser();
+	        JAdaptor parser = new JAdaptor();
 	        parser.startParser(this);
+	        
+	        
+	        ListView list = (ListView)findViewById(R.id.listView);
 	        
 	     }
 
