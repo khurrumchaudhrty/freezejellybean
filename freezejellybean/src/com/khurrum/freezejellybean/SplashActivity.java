@@ -20,7 +20,7 @@ public class SplashActivity extends ApplicationActivity  {
 			
 			@Override
 			public void onClick(View v) {
-				Intent listActivity = new Intent(getApplicationContext(),com.khurrum.freezejellybean.jsonListActivity.class);
+				Intent listActivity = new Intent(getApplicationContext(),com.khurrum.freezejellybean.JsonListActivity.class);
 				SplashActivity.this.startActivity(listActivity);
 			}
 		});
