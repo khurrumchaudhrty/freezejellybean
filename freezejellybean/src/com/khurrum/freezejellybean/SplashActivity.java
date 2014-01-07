@@ -1,6 +1,10 @@
 package com.khurrum.freezejellybean;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
 import com.actionbarsherlock.view.Menu;
 import com.khurrum.common.ApplicationActivity;
 
@@ -10,9 +14,16 @@ public class SplashActivity extends ApplicationActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);// make it with out title
-        
-        
+        getSupportActionBar().setDisplayShowTitleEnabled(true);// make it with out title
+        Button start = (Button) findViewById(R.id.start);
+        start.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent listActivity = new Intent(getApplicationContext(),com.khurrum.freezejellybean.jsonListActivity.class);
+				SplashActivity.this.startActivity(listActivity);
+			}
+		});
     }
 
     @Override
