@@ -1,0 +1,18 @@
+used following funtion in json generator to gerate dump.json
+http://www.json-generator.com/
+
+
+
+[
+    '{{repeat(100000)}}',
+    {
+       veg: function(idx) {
+            var choices = ['lorup', 'reuigh', 'simhung'];
+            return choices[this.numeric(0, choices.length -1)];
+        },
+        fruit: function(idx) {
+            var choices = ['cherry', 'apple', 'lemon'];
+            return choices[this.numeric(0, choices.length -1)];
+        }
+    }
+]

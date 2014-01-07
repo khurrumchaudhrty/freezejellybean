@@ -7,7 +7,11 @@ import android.widget.Button;
 
 import com.actionbarsherlock.view.Menu;
 import com.khurrum.common.ApplicationActivity;
-
+/**
+ * 
+ * @author khurrumchaudhry
+ *
+ */
 public class SplashActivity extends ApplicationActivity  {
 
     @Override

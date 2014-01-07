@@ -1,5 +1,9 @@
 package com.khurrum.freezejellybean.data;
-
+/**
+ * 
+ * @author khurrumchaudhry
+ *
+ */
 public class ObjectMapper {
 
 	public final static String TAG_VEG="veg";
