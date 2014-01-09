@@ -95,14 +95,53 @@ public class JAdaptor extends BaseAdapter {
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
+		ViewWrapper wrapper;
 		if(convertView==null){
 			inflater = (LayoutInflater) localContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			convertView = inflater.inflate(R.layout.listrowview,null,true);
+			wrapper = new ViewWrapper(convertView);
+			convertView.setTag(wrapper);
+		
+		}else{
+			 wrapper=(ViewWrapper)convertView.getTag();
 		}
 		
-		((TextView)convertView.findViewById(R.id.veg)).setText(data.get(position).getVeg());
-		((TextView)convertView.findViewById(R.id.fruit)).setText(data.get(position).getFruit());		
+		//Adding ViewWrapper
+		//((TextView)convertView.findViewById(R.id.veg)).setText(data.get(position).getVeg());
+		//((TextView)convertView.findViewById(R.id.fruit)).setText(data.get(position).getFruit());		
+		
+		
+		wrapper.getVeg().setText(data.get(position).getVeg());
+		wrapper.getFruit().setText(data.get(position).getFruit());		
+		
+		
 		
 		return convertView;
 	}
+	
+	
+	class ViewWrapper{
+		View base;
+		TextView veg = null;
+		TextView fruit = null;
+
+		ViewWrapper(View base){
+		    this.base = base;
+		}
+
+		TextView getVeg(){
+		    if(veg== null){
+		        veg=(TextView)base.findViewById(R.id.veg);
+		    }
+		    return veg;
+		}
+
+		TextView getFruit(){
+		    if(fruit == null){
+		        fruit=(TextView)base.findViewById(R.id.fruit);
+		    }
+		    return fruit;
+		}
+	}
+	
 }
